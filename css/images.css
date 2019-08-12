@@ -1,0 +1,127 @@
+/* css dos destaques */
+section .destaques .title1{
+color: crimson;
+border-bottom: 2px crimson solid;
+width: 100%;  
+padding: 0px;  
+}
+section .destaques{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+align-content: center;
+width: 80%;    
+}
+section .destaques .principal img{
+width: 100%;
+height: 100%;    
+}
+section .destaques .principal{
+width: 100%;
+}
+section .destaques .comum{
+width:100%;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;    
+}
+section .destaques .comum img{
+width: 48%;
+margin: 1%;    
+}
+section .destaques div{
+margin: 4px;    
+}
+@media screen and (min-width:630px){
+section .destaques .comum{
+  width: 48%; 
+}
+}
+
+/* musicas populares */
+.populares{
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: row;
+ justify-content: center;
+ align-content: center;
+ width: 80%;
+}
+section{
+  display: flex;
+  justify-content: center;  
+}
+section .populares div{
+margin: 4px;
+width: 40%;    
+}
+section .populares div img{
+width:100%;    
+}
+section .populares .title{
+width: 100%;
+color: cyan;
+border-bottom: 2px cyan solid;
+padding: 0; 
+}
+@media screen and (min-width:900px){
+section .populares div{
+width: 32%;  
+}
+}
+@media screen and (min-width:1100px){
+section .populares div{
+width: 15%;
+}  
+}  
+
+/* perfis dos artistas */
+section .perfis{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;  
+justify-content: center;
+align-content: center;
+width: 80%;  
+}
+section .perfis .title2{
+color:darkblue;
+width: 100%;
+border-bottom: 2px darkblue solid;    
+}
+section .perfis .pf{
+width: 40%;
+margin: 4px;
+color: cadetblue;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
+section .perfis .pf img{
+width: 90%;
+height: 70%;
+border-radius: 50%; 
+}
+section .perfis .pf img:hover{
+  animation: perfil 1.2s;
+}
+@keyframes perfil {
+  to{
+    transform: scale(1.1);
+    border: 1px solid cyan;
+  }
+}
+
+@media screen and (min-width:630px){
+section .perfis .pf{
+width: 30%;
+} 
+
+}
+@media screen and (min-width:1000px){
+ section .perfis .pf{
+ width: 15%; 
+ }
+
+}
